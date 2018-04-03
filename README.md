@@ -6,13 +6,13 @@ Reads cookie string into http.Cookie
 
 Get library
 ```bash
-go get git@github.com:yogeshpandey/gocookie-string-reader.git
+go get github.com/yogeshpandey/gocookie-string-reader
 ```
 
 Use library
 
 ```go
-import cookieParser "github.com/gocookie-string-reader"
+import cookieParser "github.com/yogeshpandey/gocookie-string-reader"
 import "fmt"
 
 
