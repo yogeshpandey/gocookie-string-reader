@@ -1,12 +1,13 @@
 package gocookie_string_reader
 
 import (
-	"golang.org/x/net/lex/httplex"
 	"log"
 	"net"
 	"net/http"
 	"strings"
 	"time"
+
+	"golang.org/x/net/http/httpguts"
 )
 
 /**
@@ -201,5 +202,5 @@ func isCookieNameValid(raw string) bool {
 }
 
 func isNotToken(r rune) bool {
-	return !httplex.IsTokenRune(r)
+	return !httpguts.IsTokenRune(r)
 }
